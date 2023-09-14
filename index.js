@@ -39,37 +39,59 @@
 // const darthVader =  createPlayer("Darth Vader", 200, 50, ["Saber"]);
 // console.log(darthVader);
 
-class Player {
-    age = 20;
-    constructor(name, hp, mp, items) {
-        this.name = name;
-        this.hp = hp;
-        this.mp = mp;
-        this.items = items; 
-    }
+// class Player {
+//     age = 20;
+//     constructor(name, hp, mp, items) {
+//         this.name = name;
+//         this.hp = hp;
+//         this.mp = mp;
+//         this.items = items; 
+//     }
 
-    speak(phrase) {
-        console.log(`${this.name} says: ${phrase}`);
+//     speak(phrase) {
+//         console.log(`${this.name} says: ${phrase}`);
+//     }
+// }
+// const hanSolo = new Player("Han Solo", 100, 10, ["blaster"]);
+// hanSolo.speak("Never tell me the odds!")
+// console.log(hanSolo);
+// console.log(Object.getOwnPropertyNames(hanSolo));
+
+// function AnotherPlayer(name, hp, mp, items) {
+//     this.name = name;
+//         this.hp = hp;
+//         this.mp = mp;
+//         this.items = items;
+        
+//         }
+
+
+// AnotherPlayer.prototype.speak = function (phrase){
+//     console.log(`${this.name} says: ${phrase}`);}
+
+// const darthVader = new AnotherPlayer("Darth Vader", 200, 50, ["saber"]);
+// console.log(darthVader);
+// console.log(Object.getOwnPropertyNames(darthVader));
+// darthVader.speak("I find your lack of faith disturbing")
+
+
+// Develop a class named "Playlist" that:
+
+// Holds a list of video titles and their durations.
+// Incorporates methods such as .addVideo(title, duration),
+//  .totalDuration(), and .averageDuration() to manage the video list.
+// Commit: "Designed the Playlist class with OOP methods".
+
+class playlist {
+    constructor (title, duration){
+        this.title = title;
+        this.duration = duration;
     }
 }
-const hanSolo = new Player("Han Solo", 100, 10, ["blaster"]);
-hanSolo.speak("Never tell me the odds!")
-console.log(hanSolo);
-console.log(Object.getOwnPropertyNames(hanSolo));
+function addVideo(title, duration){
+    this.title = title;
+    this.duration = duration;
 
-function AnotherPlayer(name, hp, mp, items) {
-    this.name = name;
-        this.hp = hp;
-        this.mp = mp;
-        this.items = items;
-        
-        }
-
-
-AnotherPlayer.prototype.speak = function (phrase){
-    console.log(`${this.name} says: ${phrase}`);}
-
-const darthVader = new AnotherPlayer("Darth Vader", 200, 50, ["saber"]);
-console.log(darthVader);
-console.log(Object.getOwnPropertyNames(darthVader));
-darthVader.speak("I find your lack of faith disturbing")
+}
+const titanic = new addVideo("Titanic", 300);
+console.log(titanic);
